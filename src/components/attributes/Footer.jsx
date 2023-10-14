@@ -4,7 +4,7 @@ export class Footer extends Component {
   render() {
     return (
       <div>
-        Footer
+        all Rights are reserved
       </div>
     )
   }
