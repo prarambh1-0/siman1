@@ -23,7 +23,7 @@ function Navbar() {
     size={[0, 48]}
   >
     <Layout className='layoutInMega2'>
-      <Header style={headerStyle}>SEMAN</Header>
+      <Header style={headerStyle}>SIMAN</Header>
     </Layout>
     </Space>
     </div>
