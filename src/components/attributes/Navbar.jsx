@@ -10,7 +10,7 @@ function Navbar() {
     paddingInline: 50,
     lineHeight: '64px',
     
-    backgroundColor: '#03045E',
+    backgroundColor: 'rgb(37, 150, 190)',
   };
   return (
     <>
