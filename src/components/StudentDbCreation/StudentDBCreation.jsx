@@ -7,6 +7,7 @@ import {
   Select,
   Upload,
 } from 'antd';
+import './StudentDBCreation.css'
 import { PlusOutlined } from '@ant-design/icons';
 const NormFile = (e) => {
   if (Array.isArray(e)) {
@@ -18,49 +19,47 @@ const NormFile = (e) => {
 export class StudentDBCreation extends Component {
   
   render() {
-   
-
     return (
-      <div>
-        <Form
+      <div class='bg-blue' >
+        <Form className='formstudent'
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
         style={{ maxWidth: 600 }}
       >
-        <Form.Item label="Create a batch: ">
-          <Input />
+        <Form.Item label="Create a batch: "style={{ textAlign: 'center'}} >
+          <Input style={{backgroundColor:'#CAF0F8', marginLeft: 10, width:500}}/>
         </Form.Item>
-        <Form.Item label="Speciality: ">
-          <Select>
-            <Select.Option value="demo">Medical</Select.Option>
-            <Select.Option value="demo">Nursing</Select.Option>
-            <Select.Option value="demo">Physiotherapy</Select.Option>
-            <Select.Option value="demo">Pharmacy</Select.Option>
+        <Form.Item label="Speciality: " >
+          <Select placeholder="Select" >
+            <Select.Option value="demo" >Medical</Select.Option>
+            <Select.Option value="demo" >Nursing</Select.Option>
+            <Select.Option value="demo" >Physiotherapy</Select.Option>
+            <Select.Option value="demo" >Pharmacy</Select.Option>
           </Select>
         </Form.Item>
         <Form.Item label="Level: ">
-          <Select>
+          <Select >
             <Select.Option value="demo">UG</Select.Option>
             <Select.Option value="demo">PG</Select.Option>
             <Select.Option value="demo">Intern</Select.Option>
           </Select>
         </Form.Item>
         <Form.Item label="Academic Year: ">
-          <InputNumber />
+          <InputNumber style={{backgroundColor:'#CAF0F8', marginLeft: 10}} />
         </Form.Item>
 
          <Form.Item label="Upload" valuePropName="fileList" getValueFromEvent={NormFile}>
-          <Upload action="/upload.do" listType="picture-card">
-            <div>
+          <Upload action="/upload.do" listType="picture-card" >
+            <div >
               <PlusOutlined />
-              <div style={{ marginTop: 8 }}>Upload</div>
+              <div>Upload</div>
             </div>
           </Upload>
         </Form.Item> 
-        <Form.Item className=''>
-          <Button>Create a batch</Button>
-          <Button>Next</Button>
+        <Form.Item style={{ padding:10}}>
+          <Button style={{backgroundColor: '#CAF0F8',margin: 10}}>Create a batch</Button>
+          <Button style={{backgroundColor: '#CAF0F8', margin: 10}}>Next</Button>
         </Form.Item>
       </Form>
       </div>

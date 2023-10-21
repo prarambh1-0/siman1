@@ -6,6 +6,7 @@ import MegaSheetTwo from './components/MegaSheet/MegaSheetTwo';
 import MarkAttendance from './components/MarkAttandance/MarkAttendance';
 import GroupCreation from './components/GroupCreation/GroupCreation';
 import Login from './components/attributes/login';
+import Dashbord from './components/attributes/dashbord';
 import StudentUpdate from './components/StudentDbCreation/studentupdation'
 import WorkshopDetail from './components/WorkShopDetail/WorkshopDetail';
 import StudentDBCreation from './components/StudentDbCreation/StudentDBCreation';
@@ -17,6 +18,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/studentdb" element={<StudentDBCreation />} />
         <Route path="/markattendance" element={<MarkAttendance />} />
         <Route path="/groupcreation" element={<GroupCreation />} />

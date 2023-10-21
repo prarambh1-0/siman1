@@ -17,7 +17,7 @@ export class MegaSheetOne extends Component {
         <Row className='container' style={{ marginTop: 8 }}>
           <Col span={8} className='mx-19'>
             <Form.Item label="Title of workshop :">
-              <Input placeholder=" name " />
+              <Input placeholder=" name "  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Nature of workshop"> 
           <Select>
@@ -28,16 +28,16 @@ export class MegaSheetOne extends Component {
           </Select>
         </Form.Item>
             <Form.Item label="Date :">
-            <DatePicker onChange={onChange} />
+            <DatePicker onChange={onChange}  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Reaport Number :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}} />
             </Form.Item>
             <Form.Item label="Name Of Trainer :">
-              <Input label="name" />
+              <Input label="name"  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Beneficiaries : ">
-            <Input label="Name/Institution/Category" />
+            <Input label="Name/Institution/Category"  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
         
           </Col>

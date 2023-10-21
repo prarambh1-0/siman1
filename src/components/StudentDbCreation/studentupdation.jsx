@@ -10,22 +10,22 @@ export class studentupdation extends Component {
     return (
       <div>
          <Form
-        labelCol={{ span: 4 }}
-        wrapperCol={{ span: 14 }}
+        labelCol={{ span: 5 }}
+        wrapperCol={{ span: 20 }}
         layout="horizontal"
-        style={{ maxWidth: 600 }}
+        style={{ maxWidth: 600 , textAlign: 'center'}}
       >
         <Form.Item label="First Name: ">
-          <Input />
+          <Input  style={{backgroundColor:'#CAF0F8'}}/>
         </Form.Item>
         <Form.Item label="Last Name: ">
-          <Input />
+          <Input  style={{backgroundColor:'#CAF0F8'}}/>
         </Form.Item>
         <Form.Item label="Enter Email: ">
-          <Input />
+          <Input  style={{backgroundColor:'#CAF0F8'}}/>
         </Form.Item>
         <Form.Item label="Mobile No: ">
-          <Input />
+          <Input  style={{backgroundColor:'#CAF0F8'}}/>
         </Form.Item>
         <Form.Item label="Role: ">
           <Select>
@@ -42,8 +42,8 @@ export class studentupdation extends Component {
           </Select>
         </Form.Item>
         
-        <Form.Item className=''>
-          <Button>Add Student</Button>
+        <Form.Item >
+          <Button  style={{backgroundColor:'#CAF0F8', marginLeft:100}}>Add Student</Button>
         </Form.Item>
       </Form>
       </div>

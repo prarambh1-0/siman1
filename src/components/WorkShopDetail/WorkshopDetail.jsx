@@ -30,7 +30,7 @@ export class WorkshopDetail extends Component {
         style={{ maxWidth: 600 }}
       >
       <Form.Item name="date-picker" label="Date: " {...config}>
-      <DatePicker />
+      <DatePicker  style={{backgroundColor:'#CAF0F8'}}/>
     </Form.Item>
         <Form.Item label="Name: ">
           <Select placeholder="select workshop name">
@@ -59,7 +59,7 @@ export class WorkshopDetail extends Component {
           <Upload action="/upload.do" listType="picture-card">
             <div>
               <PlusOutlined />
-              <div style={{ marginTop: 8 }}>Upload sheet</div>
+              <div style={{ marginTop: 8 }}>Attendence sheet</div>
             </div>
           </Upload>
         </Form.Item>
@@ -69,7 +69,7 @@ export class WorkshopDetail extends Component {
           <Upload action="/upload.do" listType="picture-card">
             <div>
               <PlusOutlined />
-              <div style={{ marginTop: 8 }}>Upload sheet</div>
+              <div style={{ marginTop: 8 }}>Pre & Post-test</div>
             </div>
           </Upload>
         </Form.Item> 
@@ -96,7 +96,7 @@ export class WorkshopDetail extends Component {
         </Col> 
         </Row>
         <Form.Item className=''>
-          <Button>save & Update</Button>
+          <Button  style={{backgroundColor:'#CAF0F8'}}>save & Update</Button>
         </Form.Item>
       </Form>
       </div>

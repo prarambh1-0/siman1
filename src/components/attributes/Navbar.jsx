@@ -1,32 +1,27 @@
 import './Attributes.css'
 import React from 'react';
-import { Layout, Space} from 'antd';
+import { Button, Layout } from 'antd';
 function Navbar() {
-  const { Header} = Layout;
-  const headerStyle = {
-    textAlign: 'left',
-    color: '#FFFFFF',
-    height: 64,
-    paddingInline: 50,
-    lineHeight: '64px',
-    
-    backgroundColor: 'rgb(37, 150, 190)',
-  };
+  const { Header } = Layout;
+
   return (
     <>
-    <div>
-    <Space
-    direction="vertical"
-    style={{
-      width: '100%',
-    }}
-    size={[0, 48]}
-  >
-    <Layout className='layoutInMega2'>
-      <Header style={headerStyle}>SIMAN</Header>
-    </Layout>
-    </Space>
-    </div>
+      <div>
+        <Layout style={{margin:0, padding:0, marginBottom:20}} >
+          <Header style={{
+            textAlign: 'left',
+            color: 'white',
+            height: 64,
+            padding:-7,
+            backgroundColor: 'rgb(37, 150, 190)',
+          }}><h1>SIMAN
+          <a href='/dashbord' style={{ textAlign: 'right', marginLeft: 1200, fontSize:20, color:'white'  }}> Dashbord</a>
+          </h1>
+          </Header>
+
+        </Layout>
+
+      </div>
     </>
   )
 }

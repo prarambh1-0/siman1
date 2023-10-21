@@ -7,81 +7,81 @@ export class MegaSheetTwo extends Component {
   render() {
     return (
       <div>
-        <Row>
-          <Col span={8} className='mx-10'>
+        <Row className='mx-10'>
+          <Col span={8} >
             <Form.Item label="Out of Participants :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="UG :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="PG :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Interns :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Fellowship: ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Faculty :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="BSc Nursing:">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="MSc Nursing:">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Non HCP:">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="No of Beneficiaries : ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="No. of Workshop Day’s :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
 
           </Col>
           <Col span={8}>
-            <Form.Item label="Out of Participants :">
-              <InputNumber />
+            <Form.Item label="MSc Nursing Faculty :">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="UG :">
-              <InputNumber />
+            <Form.Item label="Nursing Staff/Attendance :">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="PG :">
-              <InputNumber />
+            <Form.Item label="Physiotherapy Students :">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Interns :">
-              <InputNumber />
+            <Form.Item label="Physiotherapy Faculty :">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Fellowship: ">
-              <InputNumber />
+            <Form.Item label="Pharmacy :">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Faculty :">
-              <InputNumber />
+            <Form.Item label="External Beneficiaries:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="BSc Nursing:">
-              <InputNumber />
+            <Form.Item label="% of Beneficiaries:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="MSc Nursing:">
-              <InputNumber />
+            <Form.Item label="No. of workshop:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Non HCP:">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="No of Beneficiaries : ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="No. of Workshop Day’s :">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
 
           </Col>
           <Col span={8}>
-          <Form.Item label="Department"> 
+          <Form.Item label="Department"  > 
           <Select>
             <Select.Option value="Anesthesiology">Anesthesiology</Select.Option>
             <Select.Option value="Dermatology">Dermatology</Select.Option>
@@ -96,23 +96,35 @@ export class MegaSheetTwo extends Component {
             <Select.Option value="Radio-Diagnosis">Radio-Diagnosis</Select.Option>
           </Select>
         </Form.Item>
+            <Form.Item label="Apollo:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
+            </Form.Item>
+            <Form.Item label="Task Trainer:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
+            </Form.Item>
+            <Form.Item label="Laparoscopy:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
+            </Form.Item>
             <Form.Item label="Lucina: ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Anatomage: ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Vimedix: ">
-              <InputNumber />
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Lucina: ">
-              <InputNumber />
+            <Form.Item label="Laparoscopy:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Anatomage: ">
-              <InputNumber />
+            <Form.Item label="Luna: ">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
-            <Form.Item label="Vimedix: ">
-              <InputNumber />
+            <Form.Item label="Endoscopy:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
+            </Form.Item>
+            <Form.Item label="Blue Phantom:">
+              <InputNumber  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
           </Col>
         </Row>

@@ -9,12 +9,12 @@ export class WorkshopReport extends Component {
       <div>
         <Row>
           <Col span={5} className="mx-15" offset={3}>
-            <Form.Item label="Title of Workshop:">
-              <Input />
+            <Form.Item label="Title of Workshop:" >
+              <Input style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
 
             <Form.Item label="Lead Faculty:">
-              <Input />
+              <Input style={{backgroundColor:'#CAF0F8'}} />
             </Form.Item>
 
             <Form.Item label="Program structure:">
@@ -41,14 +41,14 @@ export class WorkshopReport extends Component {
           </Col>
           <Col offset={3}>
             <Form.Item label="Details Page:">
-              <Input />
+              <Input style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
             <Form.Item label="Attendance:">
-              <Input />
+              <Input style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
           </Col>
         </Row>
-        <Button type="primary" className="btn">Submit</Button>
+        <Button type="primary" className="btn" style={{marginBottom: 10}}>Submit</Button>
       </div>
     );
   }
