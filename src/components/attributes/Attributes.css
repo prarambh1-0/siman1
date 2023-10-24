@@ -2,7 +2,9 @@
     margin-bottom: 20px;
     width: 100%;
 }
-
+.bodyofNavbar{
+    margin-top:0;
+}
 .footer {
     /* position: absolute; */
     left: 0;

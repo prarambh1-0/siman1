@@ -10,6 +10,7 @@ import Dashbord from './components/attributes/dashbord';
 import StudentUpdate from './components/StudentDbCreation/studentupdation'
 import WorkshopDetail from './components/WorkShopDetail/WorkshopDetail';
 import StudentDBCreation from './components/StudentDbCreation/StudentDBCreation';
+import Register from './components/attributes/Registration';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
     <Navbar/>
       <Routes>
         <Route path="/" element={<Login />} />
+        <Route path="/registration" element={<Register />} />
         <Route path="/dashbord" element={<Dashbord />} />
         <Route path="/studentdb" element={<StudentDBCreation />} />
         <Route path="/markattendance" element={<MarkAttendance />} />

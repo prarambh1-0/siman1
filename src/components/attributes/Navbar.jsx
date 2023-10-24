@@ -1,12 +1,13 @@
 import './Attributes.css'
 import React from 'react';
-import { Button, Layout } from 'antd';
+import { Layout, Space } from 'antd';
 function Navbar() {
   const { Header } = Layout;
 
   return (
     <>
-      <div>
+      <div >
+         <Space direction="vertical" style={{ width: '100%' }} size={[0, 48]}>
         <Layout style={{margin:0, padding:0, marginBottom:20}} >
           <Header style={{
             textAlign: 'left',
@@ -20,7 +21,7 @@ function Navbar() {
           </Header>
 
         </Layout>
-
+          </Space>
       </div>
     </>
   )
