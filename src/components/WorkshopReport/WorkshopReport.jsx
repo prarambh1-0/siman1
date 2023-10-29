@@ -7,6 +7,7 @@ export class WorkshopReport extends Component {
   render() {
     return (
       <div>
+        <h1 style={{textAlign:'center'}}>Workshop Report</h1>
         <Row>
           <Col span={5} className="mx-15" offset={3}>
             <Form.Item label="Title of Workshop:" >

@@ -1,5 +1,5 @@
 import React, { useState , Component} from 'react';
-import { Button, Drawer } from 'antd';
+import { Button, Drawer, Row, Col } from 'antd';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 function dashbord(){
   
@@ -11,7 +11,8 @@ function dashbord(){
     setOpen(false);
   };
     return (
-      <div>
+      <Row className='mx-10'>
+      <Col span={8} >
       <Button type="primary" onClick={showDrawer}>
         <DashboardIcon style={{width: 200, color:'white'}}/>
       </Button>
@@ -21,14 +22,17 @@ function dashbord(){
         <a href="/groupcreation">Create a Group</a><br/>
         <a href="/studentupdation">Student Updation</a><br/>
         <a href="/workshopdetail">Workshop Details</a><br/>
-        <a href="/megasheet1">Megasheet one</a><br/>
-        <a href="/megasheet2">MegaSheet two</a><br/>
+        <a href="/megasheet1">Megasheet</a><br/>
+        {/* <a href="/megasheet2">MegaSheet two</a><br/> */}
         <a href="/workshopreport">Workshop report</a><br/>
       </Drawer> 
-        <div style={{textAlign:'center', height:'600px'}}>
-          <h1>Containts</h1>
-        </div>
-      </div>
+      </Col>
+      <Col span={12} style={{textAlign:'center', height:'600px'}}>
+        
+          <h1>Upcoming Events</h1>
+    
+        </Col>
+      </Row>
     );
   }
 

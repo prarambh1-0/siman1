@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, InputNumber} from 'antd';
+import { Button, Form, InputNumber} from 'antd';
 import { Col, Row, Select, Input } from 'antd';
 // import type { DatePickerProps } from 'antd';
 import { DatePicker} from 'antd';
@@ -14,8 +14,9 @@ export class MegaSheetOne extends Component {
     return (
       
       <div className='container page' >
+        <h1 style={{textAlign:'center'}}>Mega sheet entry part - I</h1>
         <Row className='container' style={{ marginTop: 8 }}>
-          <Col span={8} className='mx-19'>
+          <Col span={8} className='mx-19' style={{marginLeft:200}}>
             <Form.Item label="Title of workshop :">
               <Input placeholder=" name "  style={{backgroundColor:'#CAF0F8'}}/>
             </Form.Item>
@@ -41,7 +42,7 @@ export class MegaSheetOne extends Component {
             </Form.Item>
         
           </Col>
-          <Col span={8} className='mx-20 container' >
+          <Col span={8} className='mx-20 container' style={{marginLeft:20}} >
           
         <Form.Item label="Type of workshop :"> 
           <Select>
@@ -84,6 +85,7 @@ export class MegaSheetOne extends Component {
         </Form.Item>
           </Col>
         </Row>
+        <Button href='/megasheet2' style={{marginBottom:10, marginLeft:850,backgroundColor:'blue', color:'white'}}>Next</Button>
       </div>
     )
   }

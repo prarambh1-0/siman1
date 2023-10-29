@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <div >
-         <Space direction="vertical" style={{ width: '100%' }} size={[0, 48]}>
+         <Space direction="vertical" style={{ width: '100%' }}>
         <Layout style={{margin:0, padding:0, marginBottom:20}} >
           <Header style={{
             textAlign: 'left',

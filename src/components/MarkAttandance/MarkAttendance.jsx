@@ -204,13 +204,13 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import { Button, Form, Input, Popconfirm, Table, Upload} from 'antd';
 import '../StudentDbCreation/StudentDBCreation.css'
-import { PlusOutlined } from '@ant-design/icons';
-const NormFile = (e) => {
-  if (Array.isArray(e)) {
-    return e;
-  }
-  return e?.fileList;
-};
+// import { PlusOutlined } from '@ant-design/icons';
+// const NormFile = (e) => {
+//   if (Array.isArray(e)) {
+//     return e;
+//   }
+//   return e?.fileList;
+// };
 
 const EditableContext = React.createContext(null);
 
@@ -304,13 +304,13 @@ const MarkAttendance = () => {
       key: '0',
       name: 'Student 1',
       rollNo: '1',
-      comment: 'Attended',
+     
     },
     {
       key: '1',
       name: 'Student 2',
       rollNo: '2',
-      comment: 'Not attended',
+     
     },
   ]);
 
@@ -329,11 +329,6 @@ const MarkAttendance = () => {
       title: 'name',
       dataIndex: 'name',
       width: '30%',
-      editable: true,
-    },
-    {
-      title: 'comment',
-      dataIndex: 'comment',
       editable: true,
     },
     {
@@ -401,6 +396,7 @@ const MarkAttendance = () => {
 
   return (
     <div>
+      <h1 style={{textAlign:'center'}}>Mark Attendance</h1>
       <Button
         onClick={handleAdd}
         type="primary"
@@ -417,8 +413,9 @@ const MarkAttendance = () => {
         bordered
         dataSource={dataSource}
         columns={columns}
+        rowSelection={{}}
       />
-      <Form className='formstudent'
+      {/* <Form className='formstudent'
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
@@ -432,7 +429,7 @@ const MarkAttendance = () => {
             </div>
           </Upload>
         </Form.Item>
-      </Form>
+      </Form> */}
     </div>
   );
 };

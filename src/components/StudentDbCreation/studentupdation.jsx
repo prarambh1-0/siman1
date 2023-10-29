@@ -9,6 +9,7 @@ export class studentupdation extends Component {
   render() {
     return (
       <div>
+        <h1 style={{textAlign:'center'}}>Individual student addition</h1>
          <Form
         labelCol={{ span: 5 }}
         wrapperCol={{ span: 20 }}

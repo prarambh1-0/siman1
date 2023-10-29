@@ -21,12 +21,13 @@ export class StudentDBCreation extends Component {
   render() {
     return (
       <div class='bg-blue' >
+        <h1 style={{textAlign:'center'}}>Upcoming Events</h1>
         <Form className='formstudent'
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
         layout="horizontal"
         style={{ maxWidth: 600 }}
-      >
+      > 
         <Form.Item label="Create a batch: "style={{ textAlign: 'center'}} >
           <Input style={{backgroundColor:'#CAF0F8', marginLeft: 10, width:500}}/>
         </Form.Item>

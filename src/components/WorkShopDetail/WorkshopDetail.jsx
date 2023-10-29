@@ -23,6 +23,7 @@ export class WorkshopDetail extends Component {
   render() {
     return (
       <div>
+        <h1 style={{textAlign:'center'}}>Workshop Detail Update</h1>
          <Form
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}

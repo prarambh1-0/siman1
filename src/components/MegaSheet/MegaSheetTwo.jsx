@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, InputNumber} from 'antd';
+import { Button, Form, InputNumber} from 'antd';
 import { Col, Row, Select } from 'antd';
 
 
@@ -7,6 +7,7 @@ export class MegaSheetTwo extends Component {
   render() {
     return (
       <div>
+        <h1 style={{textAlign:'center', marginTop:10}}>Mega sheet entry part - II</h1>
         <Row className='mx-10'>
           <Col span={8} >
             <Form.Item label="Out of Participants :">
@@ -128,6 +129,8 @@ export class MegaSheetTwo extends Component {
             </Form.Item>
           </Col>
         </Row>
+        <Button href='/megasheet1' style={{marginBottom:10, marginLeft:10,backgroundColor:'blue', color:'white'}}>Previous</Button>
+        <Button href='#' style={{marginBottom:10, marginLeft:10,backgroundColor:'blue', color:'white'}}>Save</Button>
       </div>
     )
   }
