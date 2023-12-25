@@ -12,11 +12,12 @@ function Navbar() {
           <Header style={{
             textAlign: 'left',
             color: 'white',
-            height: 64,
+            height: 104,
             padding:-7,
+            width:1540,
             backgroundColor: 'rgb(37, 150, 190)',
-          }}><h1>SIMAN
-          <a href='/dashbord' style={{ textAlign: 'right', marginLeft: 1200, fontSize:20, color:'white'  }}> Dashbord</a>
+          }}><h1>Siman
+          <a href='/dashbord' style={{ textAlign: 'right', marginLeft: 1180, fontSize:20, color:'white'  }}>Home</a>
           </h1>
           </Header>
 

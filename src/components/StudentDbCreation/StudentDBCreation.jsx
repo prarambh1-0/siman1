@@ -21,7 +21,7 @@ export class StudentDBCreation extends Component {
   render() {
     return (
       <div class='bg-blue' >
-        <h1 style={{textAlign:'center'}}>Upcoming Events</h1>
+        <h1 style={{textAlign:'center'}}>Create student database</h1>
         <Form className='formstudent'
         labelCol={{ span: 4 }}
         wrapperCol={{ span: 14 }}
@@ -60,7 +60,8 @@ export class StudentDBCreation extends Component {
         </Form.Item> 
         <Form.Item style={{ padding:10}}>
           <Button style={{backgroundColor: '#CAF0F8',margin: 10}}>Create a batch</Button>
-          <Button style={{backgroundColor: '#CAF0F8', margin: 10}}>Next</Button>
+          <Button style={{backgroundColor: '#CAF0F8', margin: 10}} href='/'>Next</Button>
+          <Button style={{backgroundColor: '#CAF0F8', margin: 10}} href='/studentupdation'>Student updation</Button>
         </Form.Item>
       </Form>
       </div>

@@ -1,5 +1,5 @@
-import React, { useState , Component} from 'react';
-import { Button, Drawer, Row, Col } from 'antd';
+import React, { useState } from 'react';
+import { Button, Drawer, Row, Col, Select,} from 'antd';
 import DashboardIcon from '@mui/icons-material/Dashboard';
 function dashbord(){
   
@@ -17,14 +17,17 @@ function dashbord(){
         <DashboardIcon style={{width: 200, color:'white'}}/>
       </Button>
       <Drawer title="Dashbord" style={{fontSize:20, color: 'black'}} placement="left" onClose={onClose} open={open}>
-        <a href="/studentdb"> Create Student</a><br/>
-        <a href="/markattendance">Mark Attendance</a><br/>
-        <a href="/groupcreation">Create a Group</a><br/>
-        <a href="/studentupdation">Student Updation</a><br/>
-        <a href="/workshopdetail">Workshop Details</a><br/>
-        <a href="/megasheet1">Megasheet</a><br/>
-        {/* <a href="/megasheet2">MegaSheet two</a><br/> */}
-        <a href="/workshopreport">Workshop report</a><br/>
+      <Select style={{width:300,margin:10}} value="Entry points">
+            <Select.Option  ><a href="/studentdb"> Create Student</a><br/></Select.Option>
+            <Select.Option><a href="/markattendance">Mark Attendance</a><br/></Select.Option>
+            <Select.Option ><a href="/groupcreation">Create a Group</a><br/></Select.Option>
+            <Select.Option ><a href="/studentupdation">Student Updation</a><br/></Select.Option>
+            <Select.Option ><a href="/workshopdetail">Workshop Details</a><br/></Select.Option>
+            <Select.Option><a href="/megasheet1">Megasheet</a><br/></Select.Option>
+          </Select>
+       <Select style={{width:300,margin:10}} value="Outcome">
+        <Select.Option><a href="/workshopreport">Workshop report</a><br/></Select.Option>
+        </Select>
       </Drawer> 
       </Col>
       <Col span={12} style={{textAlign:'center', height:'600px'}}>
